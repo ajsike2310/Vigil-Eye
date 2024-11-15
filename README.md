@@ -34,7 +34,7 @@
 <h2>📦 Setup Instructions</h2>
 
 <h3>Step 1: Clone the Repository</h3>
-<pre><code>git clone https://github.com/your-username/VigilEye.git
+<pre><code>git clone https://github.com/your-username/Vigil-Eye.git
 cd VigilEye
 </code></pre>
 
