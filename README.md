@@ -38,7 +38,7 @@ cd VigilEye
 </code></pre>
 
 <h3>Step 2: Download the Facial Landmark Model</h3>
-<p>Download the <strong>shape_predictor_68_face_landmarks.dat</strong> file from <a href="[http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)" target="_blank">here</a>.</p>
+<p>Download the <strong>shape_predictor_68_face_landmarks.dat</strong> file from <a href="http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat" target="_blank">here</a>.</p>
 <p>Place the file in the project directory.</p>
 
 <h3>Step 3: Run the Application</h3>
