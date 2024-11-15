@@ -25,10 +25,14 @@
   <li><strong>dlib</strong> for facial landmark detection.</li>
   <li><strong>imutils</strong> for image resizing and handling.</li>
   <li><strong>pygame</strong> for playing alert sounds.</li>
+  <li><strong>scipy</strong> for calculating distances and Eye Aspect Ratio (EAR).</li>
+  <li><strong>Pillow</strong> for image handling (used for GUI with Tkinter).</li>
+  <li><strong>tkinter</strong> for building the GUI (pre-installed with Python).</li>
 </ul>
 
+
 <p>Install dependencies using pip:</p>
-<pre><code>pip install opencv-python dlib imutils pygame</code></pre>
+<pre><code>pip install opencv-python dlib imutils pygame scipy pillow</code></pre>
 
 <h2>📦 Setup Instructions</h2>
 
