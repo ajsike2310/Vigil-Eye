@@ -1,62 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigil Eye - Drowsiness Detection System</title>
+</head>
+<body>
 
-markdown
-Copy code
-# Vigil Eye - Drowsiness Detection System
+<h1>👀 Vigil Eye - Drowsiness Detection System 🚨</h1>
+<p>Vigil Eye is a Python-based drowsiness detection system that monitors eye movements and alerts users when signs of fatigue are detected. Using facial landmark detection and the eye aspect ratio (EAR), the app triggers an alert with sound when prolonged eye closure is detected.</p>
 
-**Vigil Eye** is a Python-based drowsiness detection application designed to monitor eye movements and alert users when signs of fatigue are detected. The app uses facial landmarks and the eye aspect ratio (EAR) to monitor eye closure in real-time. If the system detects prolonged eye closure, it triggers an alert with a sound.
+<h2>📋 Features</h2>
+<ul>
+  <li><strong>Real-Time Monitoring</strong>: Monitors users' eye movements using webcam input.</li>
+  <li><strong>Fatigue Detection</strong>: Detects prolonged eye closure and triggers an alert.</li>
+  <li><strong>Audio Alerts</strong>: Plays an alert sound when drowsiness is detected.</li>
+  <li><strong>User-Friendly Interface</strong>: Simple Tkinter-based interface to start and stop detection.</li>
+</ul>
 
-## 📋 Features
-- **Real-Time Monitoring**: Monitors users' eye movements and calculates the eye aspect ratio.
-- **Fatigue Detection**: Alerts the user when eye closure exceeds a certain threshold.
-- **Audio Alerts**: Plays a sound when drowsiness is detected.
-- **User-Friendly Interface**: Simple Tkinter interface to start and stop detection.
+<h2>⚙️ Prerequisites</h2>
+<p>Before running the application, make sure you have:</p>
+<ul>
+  <li><strong>Python 3.x</strong> (recommended version: 3.7+)</li>
+  <li><strong>OpenCV</strong> for real-time video capture and processing.</li>
+  <li><strong>dlib</strong> for facial landmark detection.</li>
+  <li><strong>imutils</strong> for image resizing and handling.</li>
+  <li><strong>pygame</strong> for playing alert sounds.</li>
+</ul>
 
-## ⚙️ Prerequisites
-Before running the application, ensure you have the following installed:
-- **Python 3.x** (recommended version: 3.7+)
-- **OpenCV** for computer vision tasks.
-- **dlib** for facial landmark detection.
-- **imutils** for image processing functions.
-- **pygame** for audio playback.
+<p>Install dependencies using pip:</p>
+<pre><code>pip install opencv-python dlib imutils pygame</code></pre>
 
-Install dependencies using pip:
-```bash
-pip install opencv-python dlib imutils pygame
-📦 Setup Instructions
-Step 1: Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/VigilEye.git
+<h2>📦 Setup Instructions</h2>
+
+<h3>Step 1: Clone the Repository</h3>
+<pre><code>git clone https://github.com/your-username/VigilEye.git
 cd VigilEye
-Step 2: Prepare the shape_predictor_68_face_landmarks.dat File
-Download the shape_predictor_68_face_landmarks.dat file from the dlib model repository.
-Place the file in the project folder.
-Step 3: Run the Application
-Open a terminal or command prompt and navigate to the project directory.
-Run the following command to start the application:
-bash
-Copy code
-python vigil_eye.py
-Step 4: Interface Instructions
-Start Detection: Click the "START DETECTION" button to begin monitoring eye movements.
-Stop Detection: Click the "STOP DETECTION" button to stop the system and stop the alert sound.
-🎮 Usage
-Login: No login required for this application.
-Eye Monitoring: The system will start monitoring your eyes once detection begins.
-Alert: If your eyes are closed for too long, an alert will be triggered with an audio cue.
-📁 Project Structure
-bash
-Copy code
-VigilEye/
-├── vigil_eye.py              # Main Python script
+</code></pre>
+
+<h3>Step 2: Download the Facial Landmark Model</h3>
+<p>Download the <strong>shape_predictor_68_face_landmarks.dat</strong> file from <a href="http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2" target="_blank">here</a>.</p>
+<p>Place the file in the project directory.</p>
+
+<h3>Step 3: Run the Application</h3>
+<pre><code>python vigil_eye.py</code></pre>
+
+<h3>Step 4: Interface Instructions</h3>
+<ul>
+  <li><strong>Start Detection</strong>: Click the "START DETECTION" button to begin monitoring eye movements.</li>
+  <li><strong>Stop Detection</strong>: Click the "STOP DETECTION" button to stop the system and stop the alert sound.</li>
+</ul>
+
+<h2>🎮 Usage</h2>
+<ol>
+  <li><strong>Login</strong>: No login required for this application.</li>
+  <li><strong>Eye Monitoring</strong>: The system will monitor your eye movements when detection is started.</li>
+  <li><strong>Alert</strong>: If prolonged eye closure is detected, an audio alert will sound.</li>
+</ol>
+
+<h2>📁 Project Structure</h2>
+<pre><code>VigilEye/
+├── vigil_eye.py               # Main Python script
 ├── shape_predictor_68_face_landmarks.dat  # Facial landmark model file
-└── README.md                 # Project documentation
-📚 Dependencies
-OpenCV: For real-time video capture and image processing.
-dlib: For detecting facial landmarks and calculating the eye aspect ratio.
-imutils: For image resizing and handling.
-pygame: For playing the alert sound.
-🚀 Future Enhancements
-Mobile App Version: Create a mobile version for drowsiness detection on phones.
-Multi-user Support: Add user profiles to track drowsiness history.
-Advanced Alerting: Implement vibration or push notifications for greater alertness.
+└── README.md                  # Project documentation
+</code></pre>
+
+<h2>📚 Dependencies</h2>
+<ul>
+  <li><strong>OpenCV</strong> for real-time video capture and image processing.</li>
+  <li><strong>dlib</strong> for detecting facial landmarks and calculating the eye aspect ratio.</li>
+  <li><strong>imutils</strong> for resizing images and handling video frames.</li>
+  <li><strong>pygame</strong> for playing alert sounds.</li>
+</ul>
+
+<h2>🚀 Future Enhancements</h2>
+<ul>
+  <li><strong>Mobile App Version</strong>: Create a mobile version of the drowsiness detection system for use on smartphones.</li>
+  <li><strong>Multi-User Support</strong>: Add user profiles to track drowsiness history for different users.</li>
+  <li><strong>Advanced Alerting</strong>: Implement vibration or push notifications for enhanced alertness.</li>
+</ul>
+
+</body>
+</html>
